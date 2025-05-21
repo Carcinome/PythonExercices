@@ -1,0 +1,3 @@
+# voir pour en faire un script pour installer les packages nécessaires depuis les venv
+
+requests
