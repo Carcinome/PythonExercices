@@ -1,2 +1,2 @@
 #!/bin/sh
-pip install 
+pip install requests
