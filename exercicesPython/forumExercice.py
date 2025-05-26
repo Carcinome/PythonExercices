@@ -68,6 +68,21 @@ class Post:
         print({self.content})
 
 
+class FilePost(Post):
+
+    def __init__(self, user, time_posted, content, file):
+        """Initialise le fichier."""
+        self.user = user
+        self.time_posted = time_posted
+        self.content = content
+        self.file = file
+    
+    def display(self):
+        """Affiche le contenu du fichier."""
+        super().display()
+        print("Pièce jointe:")
+        self.file.display()
+
 class Thread:
     """Fil de discussions."""
 
