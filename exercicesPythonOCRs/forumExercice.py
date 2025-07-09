@@ -108,5 +108,3 @@ class Thread:
     def add_post(self, post):
         """Ajoute un post."""
         self.post.append(post)
-
-tests
