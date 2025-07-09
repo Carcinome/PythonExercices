@@ -12,7 +12,7 @@ class ToolBox:
         self.tools.append(tool)
 
     def remove_tool(self, tool):
-        """Enleve un outil."""
+        """Retire un outil."""
 
         index = self.tools.index(tool)
 
@@ -62,7 +62,7 @@ class Hammer:
         nail.nail_in()
 
     def remove(self, nail):
-        """Enleve un clou."""
+        """Retire un clou."""
 
         nail.remove()
 
@@ -83,14 +83,14 @@ class Screw:
         self.tightness = 0
 
     def loosen(self):
-        """Déserre le vis."""
+        """Dé-serre la vis."""
 
         if self.tightness > 0:
 
             self.tightness -= 1
 
     def tighten(self):
-        """Serre le vis."""
+        """Serre la vis."""
 
         if self.tightness < self.MAX_TIGHTNESS:
 
