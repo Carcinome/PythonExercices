@@ -1,3 +1,6 @@
+from sndhdr import tests
+
+
 class File:
     """Fichier."""
     def __init__(self, name, size):
@@ -106,3 +109,4 @@ class Thread:
         """Ajoute un post."""
         self.post.append(post)
 
+tests
