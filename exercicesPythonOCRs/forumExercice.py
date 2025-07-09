@@ -1,6 +1,3 @@
-from sndhdr import tests
-
-
 class File:
     """Fichier."""
     def __init__(self, name, size):
@@ -19,12 +16,12 @@ Rien de plus pour l'instant."""
 class User:
     """Utilisateur."""
     def __init__(self, username, password):
-        self.username = unsername
+        self.username = username
         self.password = password
     
     def login(self):
         """Connecte l'utilisateur."""
-        print(f"L'utilisateur {self.name} est connecté.")
+        print(f"L'utilisateur {self.username} est connecté.")
 
     def post(self, thread, content, file=None):
         """Poste un message dans un fil de discussion."""
@@ -75,6 +72,7 @@ class FilePost(Post):
 
     def __init__(self, user, time_posted, content, file):
         """Initialise le fichier."""
+        super().__init__(user, time_posted, content)
         self.user = user
         self.time_posted = time_posted
         self.content = content
