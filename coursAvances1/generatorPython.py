@@ -23,3 +23,17 @@ def lettres():
     yield "c"
 for l in lettres():
     print(l)
+
+def lettres():
+    for i in range(ord("a"), ord("z") + 1):
+        yield chr(i)
+for l in lettres():
+    print(l, end=" ")
+
+def voyelles():
+    for i in range(ord("A"), ord("Z") + 1):
+        lettre = chr(i)
+        if lettre in "aeiouy":
+            yield lettre
+for l in voyelles():
+    print(l, end=" ")
