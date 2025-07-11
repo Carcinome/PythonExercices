@@ -61,7 +61,9 @@ for l in voyelles_infinies():
     print(l, end=" ")"""
 
 def lettres_a_z(n):
-    for i in range(ord("a"), ord("z") + 1):
-        yield chr(i)
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
+    while True:
+        for lettre in alphabet:
+            yield lettre
 for l in lettres_a_z(10):
     print(l, end=" ")
